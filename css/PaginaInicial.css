@@ -6,11 +6,11 @@
 body{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-
 nav h1{
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     font-size: 2.5em;
     text-transform: capitalize;
 }
@@ -21,6 +21,7 @@ nav button{
     color: white;
     border: none;
     border-radius: 3px;
+    justify-content: flex-end;
 }
 nav button:hover{
     text-decoration: none;
