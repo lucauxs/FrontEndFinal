@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.vendedor {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.vendedor img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.vendedor div {
+    flex: 1;
+}
+
+.vendedor h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.vendedor p {
+    margin-top: 10px;
+    color: #666;
+}
