@@ -1,0 +1,28 @@
+*{
+    display: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+}
+
+nav h1{
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    text-transform: capitalize;
+}
+nav button{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+nav button:hover{
+    text-decoration: none;
+    background-color: #1a811a;
+}
