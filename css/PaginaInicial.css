@@ -4,35 +4,45 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url('../imagens/background\ image.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.container {
-    background-color: rgb(240, 118, 25);
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 1200px;
-    color: rgb(227, 230, 108);
-}
-.container h1{
+#titulo{
+    color: rgb(230, 73, 73);
+    text-shadow: rgb(100, 3, 3) 1px 0.1px 5px;
+    font-size: 75px;
     text-transform: capitalize;
-    margin-bottom: 20px;
+    font-weight: 900;
+    padding: 20px;
     text-align: center;
+    position: absolute;
+    top: 0;
+    
+}
+#titulo p{
+    color: black;
+    text-shadow: none;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+.container {
+    background-color: rgba(245, 51, 7, 0.168);
+    padding: 20px;
+    border-radius: 5px;
 }
 .container p{
-    text-align: center;;
+    text-align: center;
     margin-bottom: 20px;
+    font-size:35px;
 }
 #aproveite{
-    color: rgb(227, 230, 108);
-    font-size: 20px;
+    padding: 20px;
+    font-size: 40px;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -43,15 +53,20 @@ body{
 .container button{
     text-decoration: none;
     padding: 10px;
-    background-color: #52a8da;
+    background-color: tomato;
     color: white;
-    
+    text-transform: uppercase;
+    font-weight: bold;
     border: none;
-    border-radius: 10px;
-    font-size: 18px;
+    border-radius: 15px;
+    font-size: 40px;
     width: 100%;
+    cursor: pointer;
+    max-width: 
+    300px;
+    
 }
 .container button:hover{
     text-decoration: none;
-    background-color: #2d96a7;
+    background-color: darkred;
 }
