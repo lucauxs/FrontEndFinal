@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inscricão</title>
-  <link rel="stylesheet" href="../css/PaginaVitrine.css">
+  <link rel="stylesheet" href="/css/PaginaInscricao.css">
 </head>
 <body>
     <header>
@@ -19,24 +19,35 @@
         </nav>
     </header>
   <!-- Conteúdo página inscrição-->
-  <section class="Inscricão">
-    <form onsubmit="enviar()">
-        <label for="email"></label>
-        <input type="email" name="email" id="email">
-        <button>
-          Enviar
-        </button>
-      </form>
+  <section class="Inscricão"></section>
       
-      <script>
-          function enviar(evento) {
-          evento.preventDefault();
-          
-          let form = new FormData(evento.target);
-          console.log(form);
-        }
-      </script> 
-  </section>
+  <div class="container">
+  <h2>Cadastro</h2>
+  <form onsubmit="enviar()">
+      <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+      </div>
+      <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" required>
+      </div>
+      <button type="submit">Cadastrar</button>
+  </form>
+</div>
+<script>
+  function enviar(evento) {
+  evento.preventDefault();
+  
+  let form = new FormData(evento.target);
+  console.log(form);
+}
+</script> 
+</section>
   <!-- Rodapé -->
   <footer class="footer">
     <p class="texto">&copy; 2024 Muscalyzando. Todos os direitos reservados.</p>
