@@ -6,7 +6,6 @@ padding-top: 80px; /* usei para mover a estrutura, e não deixar o conteudo fica
 }
 /* barra do menu */
 .navbar {
-  
   position: fixed;
   top: 0;
   left: 0;
@@ -17,7 +16,6 @@ padding-top: 80px; /* usei para mover a estrutura, e não deixar o conteudo fica
   display: grid;/*definir o display primeiro como grid*/
   justify-content: space-between;  /* espaço entre o nome da loja e os links */
   align-items: center;
-  z-index: 1000; /* barro com layout por cima de tudo*/
 }
 
 .navbar .logo {
@@ -57,9 +55,7 @@ padding-top: 80px; /* usei para mover a estrutura, e não deixar o conteudo fica
 }
       /*tamanho/espaços dos produtos*/
 .produto {
-  background-color: #f4f4f4; 
-  padding: 20px;
-  width: 300px;
+  background-color: #f4f4f4;
   margin: 20px;
   border: 1px solid #0a0a0a;
   border-radius: 20px;
@@ -73,7 +69,7 @@ padding-top: 80px; /* usei para mover a estrutura, e não deixar o conteudo fica
 }
   /*estica verticalmente os produtos*/
 .produto h2 {    
-  margin-top: 10px;  /*parte de cima*/
+  margin-top: 5px;  /*parte de cima*/
 }
 
 .produto p {
@@ -96,10 +92,11 @@ padding-top: 80px; /* usei para mover a estrutura, e não deixar o conteudo fica
 /* rodapé */
 footer {
   background-color: #333;
+  text-align: center;
   color: white;
-  text-align: center;    
-  padding: 0px;
+  word-spacing: 2px;
   position: fixed;
   bottom: 0;
   width: 100%;
+  padding: 0px;
 }
