@@ -43,7 +43,6 @@ body {
     margin-top: -2%;
     text-decoration: none;
     color: #f4f4f4;
-    /* Removido o justify-content: space-betweens; que estava incorreto */
 }
 .navbar .logo {
     padding: 20px;
@@ -72,6 +71,7 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
     padding: 20%;
 }
 .vitrine h2{
@@ -89,24 +89,26 @@ body {
 }
 
 .produto img {
-    width: 50%;
+    width: 90%;
     height: auto;
     border-radius: 10px;
 }
 
-.produto h2 {    
+.produto h2 {
     margin-top: 10px;  
 }
 
 .produto p {
-    margin: 15px 0; 
+    margin: 15px 0;
 }
 
 .produto button {
     background-color: #333;
     color: rgb(248, 242, 242);
     border: none;
+    display: inline-block;
     padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s; /* Ajuste a transição */
 }
@@ -128,10 +130,10 @@ body {
     margin-left: -1%; 
     display: flex; 
     align-items: center; 
-    justify-content: center; 
-    .texto{
-        text-align: center;
-        color: white;
-        word-spacing: 7px;
-    }
+    justify-content: center;
+}
+.texto{
+    text-align: center;
+    color: white;
+    word-spacing: 7px;
 }
