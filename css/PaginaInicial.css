@@ -14,7 +14,7 @@ body{
     height: 100vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-#titulo span{
+#titulo span{ /*alterandop a primeira letra do titulo*/
     color: black;
     text-shadow: #ff6347 5px 1px 5px;
     text-transform: uppercase;
@@ -23,8 +23,8 @@ body{
     text-shadow: none;
 }
 #titulo{
-    color: rgb(230, 73, 73);
-    text-shadow: rgb(100, 3, 3) 1px 0.1px 5px;
+    color: #e64949;
+    text-shadow: #654f4f 1px 0.1px 5px;
     font-size: 75px;
     font-weight: 900;
     padding: 20px;
@@ -41,10 +41,10 @@ body{
 }
 
 .container {
-    background-color: rgba(245, 51, 7, 0.168);
+    background-color: #f5330711;
     padding: 20px;
-    border-radius: 5px;
-    text-shadow: rgb(148, 148, 148) 0.8px 0.1px 5px;
+    border-radius: 15px;
+    text-shadow: rgba(123, 113, 25, 0.615) 0.8px 0.1px 5px;
 }
 .container p{
     text-align: center;
@@ -52,24 +52,34 @@ body{
     font-size:35px;
 }
 #aproveite{
+    color: #ff6347; 
+    text-shadow: black 0.1px 0px 5px;
     padding: 20px;
     font-size: 40px;
     font-weight: 900;
     text-transform: uppercase;
 }
-.container a{
+#aproveite::first-letter{ /*alterandop a primeira letra da mensagem final*/
+    font-size: 150%;
+    color: black;
+    text-shadow: #f533072b 5px 5px 5px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 900;
+    text-shadow: none;
+}
+.container a{/*remover underline do hyperlink*/
     text-decoration: none;
-    color: white;
 }
 .container button{
     text-decoration: none;
     padding: 10px;
-    background-color: #ff6347;
-    color: white;
+    background-color: #ad1616eb;
+    color: rgba(0, 0, 0, 0.841);
     text-transform: uppercase;
-    font-weight: bold;
-    border: none;
+    font-weight: 900;
     border-radius: 15px;
+    border: none;
     font-size: 40px;
     width: 100%;
     cursor: pointer;
@@ -79,5 +89,5 @@ body{
 }
 .container button:hover{
     text-decoration: none;
-    background-color: darkred;
+    background-color: #830f0feb;
 }
