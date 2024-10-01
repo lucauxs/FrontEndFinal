@@ -23,7 +23,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px; /* Ajuste a altura conforme necessário */
+  height: 20%; /* Ajuste a altura conforme necessário */
   background-color: #333;
   color: rgb(252, 252, 252);
   padding: 0%; /* Tamanho da barra */
@@ -55,8 +55,10 @@ body {
   font-weight: 900;
   padding: 20px;
   text-align: left;
-  top: 0;
+  align-items:top;
   text-decoration: none;
+  width: 100%;
+  height: 80px;
 }
 .navbar .logo::first-letter {
   color: black;
@@ -70,20 +72,23 @@ body {
 /* Estilo da seção da página cadastro */
 
 h2{
+  display: flexbox;
   text-transform: capitalize;
 }
 
-label {
+label, input {
+  display:flexbox;
   background-color: #f4f4f4; 
   padding: 10px;
-  width: 300px;
-  margin: 20px;
+  width: 70%;
+  margin: 10px;
   border: 1px solid #0a0a0a;
   border-radius: 20px;
   text-align: center;
 }
 
 .meu-botao {
+  display: flexbox;
   background-color: #aa0808; /* Cor de fundo */
   color: white; /* Cor do texto */
   padding: 15px 32px; /* Espaçamento interno */
@@ -103,6 +108,7 @@ label {
 
 
 button {
+  display: flexbox;
   background-color: #333;
   color: rgb(248, 242, 242);
   text-align: center; /* Alinha o texto ao centro */
@@ -111,7 +117,9 @@ button {
   cursor: pointer;
   transition: background-color 0.3s; /* Ajuste a transição */
   border-radius: 20px;
-  margin: 20px;
+  margin: 40px;
+  align-items: baseline;
+
 }
 
 
@@ -119,9 +127,10 @@ button:hover {
   background-color: #aa0808;
 }
 .footer {
+
   background-color: #333;  
-  position: fixed;
-  bottom: 0; /*nao sei pra que serve porem por alhum motivo kkkk tem que ter */
+   display: flexbox;
+  /*nao sei pra que serve porem por alhum motivo kkkk tem que ter */
   width: 100%;
   height: 60px; 
   display: flex;
@@ -129,11 +138,10 @@ button:hover {
   justify-content: center;
   color: white;
   padding: 10px; 
-  margin-left: -1%; 
-  display: flex; 
   align-items: center; 
   justify-content: center; 
   .texto{
+    text-align:calc(center);
       text-align: center;
       color: white;
       word-spacing: 7px;

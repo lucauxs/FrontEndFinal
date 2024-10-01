@@ -11,7 +11,6 @@
         <!-- Barra de navegação, fazer edição ainda -->  
         <nav class="navbar">
           <div class="logo"><a href="./PaginaInicial.html">Muscalyzando</a></div>
-          
             <a class="inicio" href="./PaginaInicial.html">Início</a>
             <a class="inicio" href="./PaginaVendedores.html">Vendedores</a>
             <a class="inicio" href="./">Sobre Nós</a>
@@ -20,7 +19,6 @@
     </header>
   <!-- Conteúdo página inscrição-->
   <section class="Inscricão"></section>
-      
   <div class="container">
   <h2>Cadastro</h2>
   <form onsubmit="enviar()">
@@ -36,13 +34,12 @@
           <label for="senha">Senha:</label>
           <input type="password" id="senha" name="senha" required>
       </div>
-      <button  type="submit">Cadastrar</button>
+      <button class="meu-botao" type="submit">Cadastrar</button>
   </form>
 </div>
 <script>
   function enviar(evento) {
-  evento.preventDefault();
-  
+  evento.preventDefault();  
   let form = new FormData(evento.target);
   console.log(form);
 }
