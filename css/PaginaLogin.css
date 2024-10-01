@@ -19,7 +19,12 @@ body {
 }
 
 h1 {
+<<<<<<< HEAD:html/login.css
     margin-bottom: 10px;
+=======
+    margin-bottom: 20px;
+    text-align: center;
+>>>>>>> f4af9c09ceb04fc01a4499d0efb1eaa3ed802d75:css/PaginaLogin.css
 }
 
 label {
