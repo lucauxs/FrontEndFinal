@@ -1,0 +1,16 @@
+header{
+    background-color: black;
+    color: rgb(225, 211, 211);
+    padding: 1%;
+}
+button{
+    background-color: green;
+    color: limegreen;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
