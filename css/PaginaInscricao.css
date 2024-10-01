@@ -67,18 +67,13 @@ body {
   text-shadow: none;
 }
 
-/* Estilo da seção de vitrine */
-.vitrine {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 20%;
-}
-.vitrine h2{
+/* Estilo da seção da página cadastro */
+
+h2{
   text-transform: capitalize;
 }
 
-.produto {
+label {
   background-color: #f4f4f4; 
   padding: 10px;
   width: 300px;
@@ -88,30 +83,39 @@ body {
   text-align: center;
 }
 
-.produto img {
-  width: 50%;
-  height: auto;
-  border-radius: 10px;
+.meu-botao {
+  background-color: #aa0808; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 15px 32px; /* Espaçamento interno */
+ 
+  text-decoration: none; /* Remove sublinhado */
+  display: inline-block; /* Permite definir largura e altura */
+  font-size: 16px; /* Tamanho da fonte */
+  margin: 4px 2px; /* Margens */
+  cursor:unset; /* Cursor de mão ao passar o mouse */
+  border: none; /* Remove borda padrão */
+  border-radius: 4px; /* Bordas arredondadas */
 }
 
-.produto h2 {    
-  margin-top: 10px;  
-}
 
-.produto p {
-  margin: 15px 0; 
-}
 
-.produto button {
+   
+
+
+button {
   background-color: #333;
   color: rgb(248, 242, 242);
+  text-align: center; /* Alinha o texto ao centro */
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s; /* Ajuste a transição */
+  border-radius: 20px;
+  margin: 20px;
 }
 
-.produto button:hover {
+
+button:hover {
   background-color: #aa0808;
 }
 .footer {
