@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url('https://cdn.discordapp.com/attachments/1289395468631015427/1290420124708503602/api.png?ex=66fc64e4&is=66fb1364&hm=4523f91d9cdbb86fb6c1aa3bc3d4352d870a9e5adbe68648117d2f9c5953a36c&');
+    background-image: url('../imagens/imagemDeFundo.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -86,8 +86,30 @@ body{
     max-width: 600px;
     display: block;
     margin: 0 auto;
+    transition: background-color 5s ease, transform 5s ease, font-style 0s ease; 
+    animation: mudaCor 5s infinite;
 }
-.container button:hover{
+@keyframes mudaCor {
+    0% { background-color: #ad1616eb; }
+    25% { background-color: #04010084; }
+    50% { background-color: #ad1616eb; }
+    75% { background-color: #00000081; }
+    100% { background-color: #ad1616eb; }
+}
+.container button:hover {
     text-decoration: none;
-    background-color: #830f0feb;
+    background-color: #000000b4;
+    font-style: italic;
+    transform: scale(1.3);
+}
+.container button:hover::before {
+    content: '🎸🎸';
+    font-size: 40px;
+    transition: right 0.5s ease;
+}
+.container button:hover::after {
+    content: '🎸🎸';
+    position: absolute;
+    font-size: 40px;
+    transition: right 0.5s ease;
 }

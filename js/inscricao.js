@@ -23,14 +23,14 @@ document.getElementById('formCadastro')?.addEventListener('submit', function(eve
 // Login
 document.getElementById('formLogin')?.addEventListener('submit', function(event) {
     event.preventDefault();
-    const email = document.getElementById('email').value;
+    const email = document.getElementById('emailLogin').value;
     const senha = document.getElementById('senhaLogin').value;
 
-    const usuario = usuarios.find(usuario => usuario.nomeUsuario === nomeUsuario && usuario.senha === senha);
+    const usuario = usuarios.find(usuario => usuario.email === email && usuario.senha === senha);
     if (usuario) {
         alert(`Login realizado com sucesso! Bem-vindo, ${usuario.nomeCompleto}!`);
         const newLocal = window.location.href = 'PaginaVitrine.html';
     } else {
-        alert('Nome de usuário ou senha incorretos!');
+        alert('E-mail ou senha incorretos!');
     }
 });
