@@ -20,28 +20,36 @@
   <!-- Conteúdo página inscrição-->
   <section class="Inscricão"></section>
   <div class="container">
-  <h1>Cadastro</h1>
+    <h1>Cadastro</h1>
   
   <form id="formCadastro">
-      <div>
-        <input type="text" id="nomeCompleto" placeholder="Nome Completo" required>
-      </div>
-      <div>
-        <input type="text" id="nomeUsuario" placeholder="Nome de Usuário" required>
-      </div>
-      <div>
-        <input type="password" id="senha" placeholder="Senha" required>
-      </div>
-      <button class="meu-botao" type="submit">Cadastrar</button>
+    <div>
+      <input type="text" id="nomeUsuario" placeholder="Nome de Usuário" required>
+    </div>
+    <div>
+      <input type="text" id="nomeCompleto" placeholder="Nome Completo" required>
+    </div>
+    <div>
+      <input type="email" id="email" placeholder="Seu@email.com" required>
+    </div>
+    <div>
+      <input type="password" id="senha" placeholder="Senha" required>
+    </div>
+    <div id="divTermos">
+      <label for="termosDeUso">Eu aceito os <a href="./Termos.html" id="HiperLinkTermos">termos de uso</a></label>
+      <input type="checkbox" id="termos" required>
+    </div>
+    <button class="meu-botao" type="submit">Cadastrar</button>
+    
+    <p id="contaConfirm">Já possui uma conta? <a href="./PaginaLogin.html" id="HiperLinkLogin"> Faça login</a>
+    
       <script src="/js/inscricao.js"></script>
     </form>
-
-  
-</div> 
+  </div> 
 </section>
   <!-- Rodapé -->
   <footer class="footer">
-    <p class="texto">Já possui uma conta? <a href="login.html"> Faça login</a> <br> &copy;2024 Muscalyzando. Todos os direitos reservados.</p>
+     <p class="texto">&copy;2024 Muscalyzando. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
