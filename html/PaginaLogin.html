@@ -7,14 +7,33 @@
     <title>Página de Login</title>
 </head>
 <body>
+    <header>
+        <!-- Barra de navegação-->  
+        <nav class="navbar">
+          <div class="logo">
+                <a href="./PaginaInicial.html">Muscalyzando</a></div>
+                <a class="inicio" href="./PaginaVitrine.html">Início</a>
+                <a class="inicio" href="./PaginaVendedores.html">Vendedores</a>
+                <a class="inicio" href="./">Sobre Nós</a>
+                <a class="inicio" href="./PaginaContatos.html">Contato</a>
+        </nav>
+    </header>
     <div class="container">
-        <form id="formLogin">
-            <div><input type="email" id="emailLogin" placeholder="E-mail" required></div>
-            <div><input type="password" id="senhaLogin" placeholder="Senha" required></div>
-            <div><button type="submit">Entrar</button></div>
-        </form>
-        <p>Ainda não tem uma conta? <a href="PaginaInscricao.html">Cadastre-se</a></p>
+        <form class="login">
+            <h1>Login</h1>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email"  placeholder="Digite seu e-mail" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha"  placeholder="Digite sua senha" required>
+            
+            <button type="submit">Entrar</button>
+            <p>Ainda não tem uma conta? <a href="./PaginaInscricao.html" id="HiperLinkCadastro">Cadastre-se</a></p>
         <script src="/js/inscricao.js"></script>
+        </form>
     </div>
-</body>
-</html>
+     <!-- Rodapé -->
+  <footer class="footer">
+    <p class="texto">&copy; 2024 Muscalyzando&copy;. Todos os direitos reservados.</p>
+  </footer>
+<body>

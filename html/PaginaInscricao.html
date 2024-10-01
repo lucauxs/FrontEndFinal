@@ -7,46 +7,41 @@
   <link rel="stylesheet" href="/css/PaginaInscricao.css">
 </head>
 <body>
-    <header>
-        <!-- Barra de navegação, fazer edição ainda -->  
-        <nav class="navbar">
-          <div class="logo"><a href="./PaginaInicial.html">Muscalyzando</a></div>
-            <a class="inicio" href="./PaginaInicial.html">Início</a>
+  <header>
+    <!-- Barra de navegação-->  
+    <nav class="navbar">
+      <div class="logo">
+            <a href="./PaginaInicial.html">Muscalyzando</a></div>
+            <a class="inicio" href="./PaginaVitrine.html">Início</a>
             <a class="inicio" href="./PaginaVendedores.html">Vendedores</a>
             <a class="inicio" href="./">Sobre Nós</a>
-            <a class="inicio" href="./PaginaContatos.html">Contato</a>
-        </nav>
-    </header>
+            <a class="inicio" href="./PaginaVitrine.html">Contato</a>
+    </nav>
+</header>
   <!-- Conteúdo página inscrição-->
-  <section class="Inscricão"></section>
   <div class="container">
-    <h1>Cadastro</h1>
-  
-  <form id="formCadastro">
-    <div>
-      <input type="text" id="nomeUsuario" placeholder="Nome de Usuário" required>
-    </div>
-    <div>
-      <input type="text" id="nomeCompleto" placeholder="Nome Completo" required>
-    </div>
-    <div>
-      <input type="email" id="email" placeholder="Seu@email.com" required>
-    </div>
-    <div>
-      <input type="password" id="senha" placeholder="Senha" required>
-    </div>
-    <div id="divTermos">
-      <label for="termosDeUso">Eu aceito os <a href="./Termos.html" id="HiperLinkTermos">termos de uso</a></label>
-      <input type="checkbox" id="termos" required>
-    </div>
-    <button class="meu-botao" type="submit">Cadastrar</button>
+    <form class="formCadastro">
+        <h1>Cadastro</h1>
+        <label for="nomeUsuario">Nome de Usuário:</label>
+        <input type="text" id="nomeUsuario" placeholder="Usuario" required>
+
+        <label for="nomeCompleto">Nome Completo:</label>
+        <input type="text" id="nomeCompleto" placeholder="Seu nome" required>
+   
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email"  placeholder="Seu@email.com" required>
     
-    <p id="contaConfirm">Já possui uma conta? <a href="./PaginaLogin.html" id="HiperLinkLogin"> Faça login</a>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha"  placeholder="1234" required>
     
-      <script src="/js/inscricao.js"></script>
+        <label for="termosDeUso">Eu aceito os <a href="./Termos.html" id="HiperLinkTermos">termos de uso</a></label>
+        <input type="checkbox" id="termos" required>
+     
+        <button class="meu-botao" type="submit">Cadastrar</button>
+        <p id="contaConfirm">Já possui uma conta? <a href="./PaginaLogin.html" id="HiperLinkLogin"> Faça login</a>
+          <script src="/js/inscricao.js"></script>
     </form>
-  </div> 
-</section>
+</div>
   <!-- Rodapé -->
   <footer class="footer">
      <p class="texto">&copy;2024 Muscalyzando. Todos os direitos reservados.</p>
