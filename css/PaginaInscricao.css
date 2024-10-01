@@ -1,0 +1,102 @@
+    /* estilo do body */
+    *{
+        font-family: Arial, sans-serif; /*fonte que eu consideri básica, qualquer coisa altera dps*/
+        padding-top: 80px; /* usei para mover a estrutura, e não deixar o conteudo ficar atrás da barra de nav*/
+        
+        }
+        /* barra do menu */
+        .navbar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background-color: #333;
+          color: rgb(252, 252, 252);  /* cor do muscalyzando  */
+          padding: 10px; /* tamanho da barra*/
+          display: grid;/*definir o display primeiro como grid*/
+          justify-content: space-between;  /* espaço entre o nome da loja e os links */
+          align-items: center;
+        }
+        
+        .navbar .logo {
+          margin-left: 20px; /* distância da esquerda da página */
+          font-size: 25px;
+          font-weight: bold;
+        }
+        
+        .navbar ul {
+          list-style: none;
+          display: flex;
+          margin-right: 20px; /* Distância da direita da página */
+        }
+        
+        .navbar ul li {
+          margin: 0 15px;
+        }
+        
+        .navbar ul li a {
+          text-decoration: none;
+          color: white;
+          font-size: 18px;
+          padding: 10px;
+          transition: background-color 0.3s;
+        }
+        
+        .navbar ul li a:hover {
+          background-color: #555;
+          border-radius: 5px;
+        }
+        
+        /* Estilo da seção de vitrine */
+        .vitrine {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          padding: 20px;
+        }
+              /*tamanho/espaços dos produtos*/
+        .produto {
+          background-color: #f4f4f4;
+          margin: 20px;
+          border: 1px solid #0a0a0a;
+          border-radius: 20px;
+          text-align: center;
+        }
+        
+        .produto img {
+          width: 50%;
+          height: auto;
+          border-radius: 10px;
+        }
+          /*estica verticalmente os produtos*/
+        .produto h2 {    
+          margin-top: 5px;  /*parte de cima*/
+        }
+        
+        .produto p {
+          margin: 15px 0; /*parte de baixo*/
+        }
+        
+        .produto button {
+          background-color: #333;
+          color: rgb(248, 242, 242);
+          border: none;
+          padding: 10px 20px;
+          cursor: pointer;
+          transition: 0s;
+        }
+        
+        .produto button:hover {
+          background-color: #aa0808;
+        }
+        
+        /* rodapé */
+        footer {
+          background-color: #333;
+          text-align: center;
+          color: white;
+          word-spacing: 2px;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          padding: 0px;
+        }
