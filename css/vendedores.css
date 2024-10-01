@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #333;
+    color: rgb(252, 252, 252);
+    padding: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1000;
+    font-weight: 900;
+    font-size: 20px;
+}
+.navbar :hover {
+    transition: color 0.3s;
+    color: #aa0808;
+}
+
+.login img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-left: 10px;
+}
+.inicio {
+    display: flex;
+    align-items: center;
+    margin-top: -2%;
+    text-decoration: none;
+    color: #f4f4f4;
+}
+.navbar .logo {
+    padding: 20px;
+}
+.navbar .logo a {
+    color: #e64949;
+    text-shadow: #654f4f 1px 0.1px 5px;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 20px;
+    text-align: left;
+    top: 0;
+    text-decoration: none;
+}
+.navbar .logo::first-letter {
+    color: black;
+    text-shadow: #ff6347 5px 1px 5px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 900;
+    text-shadow: none;
+}
+
+.vendedor {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.vendedor img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.vendedor div {
+    flex: 1;
+}
+
+.vendedor h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.vendedor p {
+    margin-top: 10px;
+    color: #666;
+}
+
+.info-box {
+    position: absolute;
+    top: 50%; /* Alinha a caixa verticalmente com a imagem */
+    left: 50%;
+    transform: translate(-50%, -100%); /* Ajusta a posição para ficar acima da imagem */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    max-width: 300px;
+    text-align: center;
+}
+
+.vendedor:hover .info-box {
+    opacity: 1;
+    visibility: visible;
+}
+
+.footer {
+    background-color: #333;  
+    position: fixed;
+    bottom: 0; /*nao sei pra que serve porem por alhum motivo kkkk tem que ter */
+    width: 100%;
+    height: 60px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px; 
+    margin-left: -1%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.texto{
+    text-align: center;
+    font-size: small;
+    color: white;
+    word-spacing: 7px;
+}
