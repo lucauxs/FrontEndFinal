@@ -43,7 +43,6 @@ body {
   margin-top: -2%;
   text-decoration: none;
   color: #f4f4f4;
-  /* Removido o justify-content: space-betweens; que estava incorreto */
 }
 .navbar .logo {
   padding: 20px;
@@ -71,41 +70,25 @@ body {
 
 /* Estilo da seção da página cadastro */
 
-h2{
+h1{
+  vertical-align: super;
   display: flexbox;
   text-transform: capitalize;
+  text-align: center;
 }
 
-label, input {
+
+#nomeCompleto,#nomeUsuario,#senha{
+  align-items: center;
   display:flexbox;
   background-color: #f4f4f4; 
   padding: 10px;
-  width: 70%;
+  width: 60%;
   margin: 10px;
   border: 1px solid #0a0a0a;
   border-radius: 20px;
   text-align: center;
 }
-
-.meu-botao {
-  display: flexbox;
-  background-color: #aa0808; /* Cor de fundo */
-  color: white; /* Cor do texto */
-  padding: 15px 32px; /* Espaçamento interno */
- 
-  text-decoration: none; /* Remove sublinhado */
-  display: inline-block; /* Permite definir largura e altura */
-  font-size: 16px; /* Tamanho da fonte */
-  margin: 4px 2px; /* Margens */
-  cursor:unset; /* Cursor de mão ao passar o mouse */
-  border: none; /* Remove borda padrão */
-  border-radius: 4px; /* Bordas arredondadas */
-}
-
-
-
-   
-
 
 button {
   display: flexbox;
@@ -130,7 +113,7 @@ button:hover {
 
   background-color: #333;  
    display: flexbox;
-  /*nao sei pra que serve porem por alhum motivo kkkk tem que ter */
+  bottom: 0%;/*nao sei pra que serve porem por alhum motivo kkkk tem que ter */
   width: 100%;
   height: 60px; 
   display: flex;
@@ -145,5 +128,6 @@ button:hover {
       text-align: center;
       color: white;
       word-spacing: 7px;
+      
   }
 }

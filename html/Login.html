@@ -8,16 +8,14 @@
 </head>
 <body>
     <div class="container">
-        <form class="login">
-            <h1>Login</h1>
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email"  placeholder="Digite seu e-mail">
-            
-            <label for="senha">Senha:</label>
-            <input type="password" name="senha" id="senha"  placeholder="Digite sua senha">
-            
-            <button type="entrar">Entrar</button>
+        <form id="formLogin">
+            <div><input type="text" id="nomeUsuarioLogin" placeholder="Nome de Usuário" required></div>
+            <div><input type="password" id="senhaLogin" placeholder="Senha" required></div>
+            <div><button type="submit">Entrar</button></div>
         </form>
+        <p>Ainda não tem uma conta? <a href="PaginaInscricao.html">Cadastre-se</a></p>
+        <script src="/js/inscricao.js"></script>
+        
     </div>
 </body>
 </html>
