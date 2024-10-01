@@ -31,8 +31,6 @@ body {
     justify-content: space-evenly; /* Espaço entre o logo e os links */
     align-items: center;
     z-index: 1000; /* Barra sobre tudo */
-    font-weight: 900;
-    font-size: 20px;
 }
 .navbar :hover {
     transition: color 0.3s;
@@ -135,5 +133,6 @@ body {
 }
 .texto{
     text-align: center;
-    font-size: small;
+    color: white;
+    word-spacing: 7px;
 }
