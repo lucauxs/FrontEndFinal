@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscricão</title>
+  <link rel="stylesheet" href="../css/PaginaVitrine.css">
+</head>
+<body>
+    <header>
+        <!-- Barra de navegação, fazer edição ainda -->  
+        <nav class="navbar">
+          <div class="logo"><a href="./PaginaInicial.html">Muscalyzando</a></div>
+          
+            <a class="inicio" href="./PaginaInicial.html">Início</a>
+            <a class="inicio" href="./PaginaVendedores.html">Vendedores</a>
+            <a class="inicio" href="./">Sobre Nós</a>
+            <a class="inicio" href="./PaginaContatos.html">Contato</a>
+        </nav>
+    </header>
+  <!-- Conteúdo página inscrição-->
+  <section class="Inscricão">
+    <form onsubmit="enviar()">
+        <label for="email"></label>
+        <input type="email" name="email" id="email">
+        <button>
+          Enviar
+        </button>
+      </form>
+      
+      <script>
+          function enviar(evento) {
+          evento.preventDefault();
+          
+          let form = new FormData(evento.target);
+          console.log(form);
+        }
+      </script> 
+  </section>
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p class="texto">&copy; 2024 Muscalyzando. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
