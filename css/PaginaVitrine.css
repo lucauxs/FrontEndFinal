@@ -3,7 +3,20 @@
     padding-top: 20px; /* Mover a estrutura para não deixar o conteúdo atrás da barra de navegação */
     box-sizing: border-box;
 }
-
+header img {
+    padding: 0%;
+    width: 30px;
+    display: block;
+}
+header a{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 /* barra do menu */
 .navbar {
     position: fixed;
@@ -13,22 +26,24 @@
     height: 80px; /* Ajuste a altura conforme necessário */
     background-color: #333;
     color: rgb(252, 252, 252);
-    padding: 10px; /* Tamanho da barra */
+    padding: 0%; /* Tamanho da barra */
     display: flex; /* Mudado de grid para flex */
-    justify-content: space-around; /* Espaço entre o logo e os links */
+    justify-content: space-evenly; /* Espaço entre o logo e os links */
     align-items: center;
     z-index: 1000; /* Barra sobre tudo */
+    
 }
-
+.navbar :hover {
+    transition: color 0.3s;
+    color: #aa0808;
+}
 .inicio {
     display: flex;
     align-items: center;
     margin-top: -2%;
     text-decoration: none;
     color: #f4f4f4;
-    /* Removido o justify-content: space-betweens; que estava incorreto */
 }
-
 .navbar .logo {
     padding: 20px;
 }
@@ -53,9 +68,14 @@
 
 /* Estilo da seção de vitrine */
 .vitrine {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 10px;
+    gap: 10px;
+    padding: 20%;
+}
+.vitrine h2{
+    text-transform: capitalize;
 }
 
 .produto {
@@ -69,24 +89,26 @@
 }
 
 .produto img {
-    width: 50%;
+    width: 90%;
     height: auto;
     border-radius: 10px;
 }
 
-.produto h2 {    
+.produto h2 {
     margin-top: 10px;  
 }
 
 .produto p {
-    margin: 15px 0; 
+    margin: 15px 0;
 }
 
 .produto button {
     background-color: #333;
     color: rgb(248, 242, 242);
     border: none;
+    display: inline-block;
     padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s; /* Ajuste a transição */
 }
@@ -108,10 +130,10 @@
     margin-left: -1%; 
     display: flex; 
     align-items: center; 
-    justify-content: center; 
-    .texto{
-        text-align: center;
-        color: white;
-        word-spacing: 7px;
-    }
+    justify-content: center;
+}
+.texto{
+    text-align: center;
+    color: white;
+    word-spacing: 7px;
 }
